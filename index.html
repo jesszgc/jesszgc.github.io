@@ -1,13 +1,19 @@
 <!DOCTYPE html>
 <html>
+<head>
+    <script src="http://libs.baidu.com/jquery/1.9.1/jquery.js"></script>
+  <script type="text/javascript" src="./js/pichelper.js"></script>
+ 
+</head>
 <body>
 <center><h1>Hello World</h1></center>
   
 <center><p>I'm hosted with GitHub Pages.</br> This is the personal home page of Jess</p></center>
- <center> <img src="./img/122129_TqPO_12.jpeg" width="650" height="600" /></center>
-<center> <img src="./img/152030_FbiE_2720166.jpg" width="650" height="600" /></center>
-  <center> <img src="./img/111438_f3KV_114251.gif" width="650" height="600" /></center>
-  <center> <img src="./img/IMGb083fe71c7ac43780903020.gif" width="650" height="20" /></center>
+ <center> <img src="./img/122129_TqPO_12.jpeg" width="100" height="100" class="pimg"/> 
+  <img src="./img/152030_FbiE_2720166.jpg" width="100" height="100" class="pimg"/></center>
+  <center> <img src="./img/111438_f3KV_114251.gif" width="100" height="100" class="pimg"/></center>
+  <center> <img src="./img/IMGb083fe71c7ac43780903020.gif" width="100" height="10" class="pimg"/></center>
+  
   <center> <video src="./video/xiguameimei.mp4" controls="controls">
 您的浏览器不支持 video 标签。
 </video></center>
@@ -16,5 +22,10 @@
 </video></center>
  <center> <p><a href="http://www.cnblogs.com/jesszhu/">welcome to my blog in cnblogs</a></p></center>
  <center> <p><a href="EvaluationofMTANNs.pdf">welcome to my blog in cnblogs</a></p></center>
+ <div id="outerdiv" style="position:fixed;top:0;left:0;background:rgba(0,0,0,0.7);z-index:2;width:100%;height:100%;display:none;">
+    <div id="innerdiv" style="position:absolute;">
+        <img id="bigimg" style="border:5px solid #fff;" src="" />
+    </div>
+</div>
 </body>
 </html>
