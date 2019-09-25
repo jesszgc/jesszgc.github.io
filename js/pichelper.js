@@ -52,11 +52,17 @@ function minPic(event){
 }
 $(function(){  
 	$(".pimg").click(function(){  
-		var _this = $(this);//将当前的pimg元素作为_this传入函数  
+		var _this = $(this);//将当前的pimg元素作为_this传入函数
+		
 		imgShow("#outerdiv", "#innerdiv", "#bigimg", _this);  
 	});  
 });  
+// alert(getQueryVariable("picurl"))  
+window.onload=function (){
 
+	alert(getQueryVariable("picurl"))
+
+}
 function imgShow(outerdiv, innerdiv, bigimg, _this){  
 	var src = _this.attr("src");//获取当前点击的pimg元素中的src属性  
 	$(bigimg).attr("src", src);//设置#bigimg元素的src属性  
@@ -94,4 +100,14 @@ function imgShow(outerdiv, innerdiv, bigimg, _this){
 	$(outerdiv).click(function(){//再次点击淡出消失弹出层  
 		$(this).fadeOut("fast");  
 	});  
+}
+function getQueryVariable(variable)
+{
+       var query = window.location.search.substring(1);
+       var vars = query.split("&");
+       for (var i=0;i<vars.length;i++) {
+               var pair = vars[i].split("=");
+               if(pair[0] == variable){return pair[1];}
+       }
+       return(false);
 }
