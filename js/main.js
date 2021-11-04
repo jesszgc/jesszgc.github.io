@@ -1,9 +1,9 @@
 window.onload=function (){
 
     var contenthtml=getQueryVariable("content")
-    // var insertText = "<table><tr><td>any thing</td></tr></table>";
+    //  var insertText = "<table><tr><td>any thing</td></tr></table>";
     $('.configHead').load(contenthtml);
-    //document.getElementById("insert").innerHTML=content;
+    // document.getElementById("insert").innerHTML=insertText;
 
 }
 function getQueryVariable(variable)
