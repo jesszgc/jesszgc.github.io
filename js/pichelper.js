@@ -60,7 +60,7 @@ $(function(){
 // alert(getQueryVariable("picurl"))  
 window.onload=function (){
 
-	alert(getQueryVariable("picurl"))
+	//alert(getQueryVariable("picurl"))
 
 }
 function imgShow(outerdiv, innerdiv, bigimg, _this){  
