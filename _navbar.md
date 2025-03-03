@@ -1,0 +1,5 @@
+* [首页](/)
+* [工作记录](worklog)
+* [知识拾遗](shiyi)
+* [轻松一刻](happy)
+* [Old](main.html)
