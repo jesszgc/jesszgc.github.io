@@ -15,8 +15,12 @@
   <script>
     window.$docsify = {
       loadSidebar: true,
+      alias: {
+      '/.*/_sidebar.md': '/_sidebar.md'
+      },
       loadNavbar: true,
-      coverpage: true
+      coverpage: false,
+      subMaxLevel: 2
     }
   </script>
   <script src="https://cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
